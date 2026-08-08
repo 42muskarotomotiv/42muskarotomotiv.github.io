@@ -42,6 +42,18 @@ footer{padding:25px 7%;display:flex;justify-content:space-between;color:#555;fon
 .vs-info>span{color:#e21b23;font-size:11px;font-weight:900}.vs-info h3{margin:0;font-size:20px}.vs-info p{margin:5px 0 0;color:#777;font-size:10px}.vs-info b{font-size:21px;color:#777}.vs-card:hover .vs-info b{color:#e21b23}
 @media(max-width:700px){.visual-services{padding:70px 6%}.vs-head{display:block}.vs-head h2{font-size:40px}.vs-grid{grid-template-columns:1fr}.vs-img{height:210px}}
 </style>
+
+<style>
+.emergency-strip{margin:0 7% 90px;border:1px solid #66151a;border-radius:12px;background:linear-gradient(100deg,#23090b,#0c0c0c);min-height:105px;padding:20px 25px;display:flex;align-items:center;gap:20px;position:relative;overflow:hidden}
+.emergency-strip:before{content:"";position:absolute;top:0;bottom:0;left:-30%;width:25%;background:linear-gradient(90deg,transparent,#e21b2328,transparent);transform:skewX(-18deg);animation:emergencyScan 3s infinite}
+.pulse-dot{width:15px;height:15px;min-width:15px;border-radius:50%;background:#e21b23;box-shadow:0 0 0 0 #e21b2366;animation:pulseRed 1.4s infinite}
+.emergency-copy{display:flex;flex-direction:column;gap:3px;position:relative;z-index:1}.emergency-label{font-size:10px;letter-spacing:3px;color:#ff4a50;font-weight:900;animation:blink 1.3s infinite}.emergency-copy strong{font-size:18px;letter-spacing:-.3px}.emergency-copy small{font-size:10px;color:#777}
+.emergency-btn{margin-left:auto;position:relative;z-index:1;border:1px solid #e21b23;background:#e21b23;padding:13px 18px;border-radius:4px;font-size:10px;font-weight:900;white-space:nowrap;transition:.2s}.emergency-btn:hover{background:#ff343b}
+@keyframes pulseRed{0%{box-shadow:0 0 0 0 #e21b2366}70%{box-shadow:0 0 0 12px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@keyframes blink{0%,45%{opacity:1}50%,75%{opacity:.35}100%{opacity:1}}
+@keyframes emergencyScan{0%{left:-30%}55%,100%{left:130%}}
+@media(max-width:600px){.emergency-strip{margin:0 6% 65px;padding:20px;gap:14px}.emergency-copy strong{font-size:15px}.emergency-copy small{font-size:9px}.emergency-btn{padding:11px 12px;font-size:9px}.pulse-dot{width:12px;min-width:12px;height:12px}}
+</style>
 </head>
 <body>
 <header class="nav"><a class="logo" href="#top"><span>42</span> MUSKAR <b>OTOMOTİV</b></a><nav class="navlinks"><a href="#hizmetler">Hizmetler</a><a href="#surec">Süreç</a><a href="#iletisim">İletişim</a></nav><a class="navphone" href="tel:+905511500428">0551 150 04 28</a></header>
@@ -62,7 +74,7 @@ footer{padding:25px 7%;display:flex;justify-content:space-between;color:#555;fon
 <section class="visual-services" id="hizmetlerimiz">
   <div class="vs-head">
     <div><div class="eyebrow">HİZMETLERİMİZ</div><h2>Her işlem için<br><span>uzman ekip.</span></h2></div>
-    <p>Kaporta, elektrik, mekanik tamir ve çekici hizmetlerini tek noktada birleştiriyoruz.</p>
+    <p>Kaporta, elektrik, mekanik tamir ve <strong style="color:#e21b23">kurtarıcı</strong> hizmetlerini tek noktada birleştiriyoruz.</p>
   </div>
   <div class="vs-grid">
     <a class="vs-card" href="#iletisim">
@@ -95,18 +107,32 @@ footer{padding:25px 7%;display:flex;justify-content:space-between;color:#555;fon
       </div>
       <div class="vs-info"><span>03</span><div><h3>Genel Tamir</h3><p>Mekanik bakım ve onarım</p></div><b>→</b></div>
     </a>
+
     <a class="vs-card" href="#iletisim">
-      <div class="vs-img tow">
+      <div class="vs-img recovery">
         <svg viewBox="0 0 600 330" aria-hidden="true">
-          <rect x="85" y="135" width="270" height="82" rx="18" fill="none" stroke="#eee" stroke-width="9"/>
-          <path d="M355 158h76l48 59H355Z" fill="none" stroke="#e21b23" stroke-width="9"/>
-          <circle cx="153" cy="226" r="34" fill="#080808" stroke="#777" stroke-width="9"/><circle cx="421" cy="226" r="34" fill="#080808" stroke="#777" stroke-width="9"/>
-          <path d="M475 217h70c16 0 24 14 12 24l-34 28" fill="none" stroke="#e21b23" stroke-width="8"/>
+          <path d="M72 207h325c18 0 31-13 27-30l-15-55c-4-15-16-24-32-25l-75-4-34-36H184l-39 36-51 4c-17 1-28 11-32 27l-14 54c-4 17 8 29 24 29Z" fill="none" stroke="#eee" stroke-width="9"/>
+          <circle cx="145" cy="218" r="34" fill="#080808" stroke="#777" stroke-width="9"/>
+          <circle cx="370" cy="218" r="34" fill="#080808" stroke="#777" stroke-width="9"/>
+          <path d="M397 198h78c18 0 30 17 21 33l-31 49" fill="none" stroke="#e21b23" stroke-width="9"/>
+          <path d="M496 280h40" stroke="#e21b23" stroke-width="9"/>
+          <path d="M478 230l-28 40" stroke="#eee" stroke-width="7"/>
+          <path d="M220 56h95" stroke="#777" stroke-width="7"/>
         </svg>
       </div>
-      <div class="vs-info"><span>04</span><div><h3>Çekici</h3><p>Yol yardım ve araç taşıma</p></div><b>→</b></div>
+      <div class="vs-info"><span>04</span><div><h3>Kurtarıcı</h3><p>Yolda kalan araçlar için 7/24 kurtarıcı ve yol yardım</p></div><b>→</b></div>
     </a>
   </div>
+</section>
+
+<section class="emergency-strip">
+  <div class="pulse-dot"></div>
+  <div class="emergency-copy">
+    <span class="emergency-label">7/24 YOL YARDIM</span>
+    <strong>KURTARICI & HASAR DANIŞMANLIK</strong>
+    <small>Yolda kaldınız veya kaza yaptınız? Hemen bize ulaşın.</small>
+  </div>
+  <a href="https://wa.me/905511500428?text=Merhaba%20MUSKAR%20OTOMOT%C4%B0V%2C%207%2F24%20yol%20yard%C4%B1m%20ve%20hasar%20dan%C4%B1%C5%9Fmanl%C4%B1k%20i%C3%A7in%20yard%C4%B1m%20istiyorum." class="emergency-btn">HEMEN ARA →</a>
 </section>
 <section class="process" id="surec"><div class="eyebrow">MUSKAR SÜRECİ</div><div class="process-grid"><div class="step"><div class="big">01</div><strong>Fotoğrafı Gönder</strong><p>Aracınızın hasarlı bölgesini WhatsApp'tan gönderin.</p></div><div class="step"><div class="big">02</div><strong>Değerlendirelim</strong><p>İhtiyacı ve yapılacak işlemleri birlikte belirleyelim.</p></div><div class="step"><div class="big">03</div><strong>Onaralım</strong><p>Planlanan işlemleri titizlikle uygulayalım.</p></div><div class="step"><div class="big">04</div><strong>Teslim Edelim</strong><p>Aracınızı kontrol ederek teslim edelim.</p></div></div></section>
 <section class="quote"><div><div class="eyebrow">NEDEN MUSKAR?</div><h2>İşimiz araç.<br><span>Önceliğimiz güven.</span></h2></div><div class="quote-box">Profesyonel işçilik, hızlı iletişim ve şeffaf süreç. Aracınız bize emanet olduğunda ne yapılacağını bilirsiniz; biz de yaptığımız işin arkasında dururuz.</div></section>
