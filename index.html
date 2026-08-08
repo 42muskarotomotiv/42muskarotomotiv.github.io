@@ -1,90 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MUSKAR OTOMOTİV | Kaporta & Boya</title>
-<meta name="description" content="MUSKAR OTOMOTİV - Kaporta, boya, hasarlı araç onarımı ve otomotiv hizmetleri.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MUSKAR OTOMOTİV | Konya Kaporta & Boya</title>
+<meta name="description" content="MUSKAR OTOMOTİV Konya kaporta, boya ve hasarlı araç onarımı.">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;background:#0b0d10;color:#fff;line-height:1.5}
-a{text-decoration:none;color:inherit}
-header{position:sticky;top:0;z-index:10;background:rgba(11,13,16,.95);border-bottom:1px solid #292d33}
-.nav{max-width:1100px;margin:auto;padding:18px 22px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:25px;font-weight:900;letter-spacing:1px}.logo span{color:#e31b23}
-nav a{margin-left:20px;color:#ddd;font-weight:700}
-.hero{min-height:78vh;display:flex;align-items:center;background:linear-gradient(120deg,#08090b 25%,#171a1f 70%,#2a0b0d);padding:60px 22px}
-.hero-inner{max-width:1100px;margin:auto;width:100%}
-.badge{display:inline-block;border:1px solid #e31b23;color:#ff5960;border-radius:30px;padding:8px 15px;font-weight:700;margin-bottom:20px}
-h1{font-size:clamp(42px,8vw,82px);line-height:.95;margin-bottom:22px}
-h1 span{color:#e31b23}
-.hero p{max-width:650px;color:#c9cbd0;font-size:19px;margin-bottom:30px}
-.buttons{display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:14px 22px;border-radius:10px;font-weight:800;display:inline-block}
-.primary{background:#e31b23}.secondary{border:1px solid #555;background:#171a1f}
-section{max-width:1100px;margin:auto;padding:70px 22px}
-.section-title{font-size:34px;margin-bottom:12px}.section-text{color:#aeb3bb;margin-bottom:28px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#15181d;border:1px solid #292d33;border-radius:16px;padding:25px}
-.card h3{font-size:21px;margin-bottom:9px}.card p{color:#aeb3bb}
-.contact{background:#12151a;border-top:1px solid #292d33;border-bottom:1px solid #292d33}
-.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.info{background:#1a1e24;border-radius:16px;padding:25px}.info strong{display:block;font-size:18px;margin-bottom:5px}.info span{color:#c4c8ce}
-footer{text-align:center;padding:30px 20px;color:#858b94}
-@media(max-width:700px){nav{display:none}.cards,.contact-box{grid-template-columns:1fr}section{padding:50px 18px}.hero{min-height:72vh;padding:45px 18px}}
+:root{--red:#e21d2b;--bg:#080a0d;--card:#11151a;--line:#282e36;--muted:#aeb5bf}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#fff}
+header{position:sticky;top:0;z-index:20;background:rgba(8,10,13,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1150px;margin:auto;padding:17px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:900;letter-spacing:.5px}.logo b{color:var(--red)}
+nav a{margin-left:20px;color:#ddd;text-decoration:none;font-weight:700}
+.hero{min-height:82vh;display:flex;align-items:center;background:radial-gradient(circle at 85% 20%,#451117 0,#16191e 32%,#080a0d 68%);padding:70px 20px}
+.wrap{max-width:1150px;margin:auto;width:100%}.tag{display:inline-block;padding:9px 15px;border:1px solid var(--red);border-radius:30px;color:#ff6871;font-weight:800}
+h1{font-size:clamp(44px,8vw,88px);line-height:.94;margin:22px 0}.red{color:var(--red)}
+.hero p{max-width:700px;color:#c6cbd2;font-size:20px;line-height:1.6}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:15px 23px;border-radius:11px;text-decoration:none;font-weight:900;display:inline-block}.primary{background:var(--red);color:white}.dark{border:1px solid #555;color:white;background:#14181d}
+section{padding:75px 20px}.title{font-size:36px;margin:0 0 10px}.sub{color:var(--muted);margin:0 0 30px;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:27px}.icon{font-size:30px}.card h3{font-size:22px;margin:14px 0 8px}.card p{color:var(--muted);line-height:1.6}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.photo{height:220px;border-radius:18px;border:1px solid var(--line);background:linear-gradient(135deg,#242a31,#101318);display:flex;align-items:end;padding:20px;font-weight:900;font-size:20px}
+.contact{background:#101419;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.contactgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.info{background:#171c22;border:1px solid var(--line);border-radius:15px;padding:22px}.info strong{display:block;margin-bottom:7px}.info span{color:#c1c7cf}
+footer{text-align:center;color:#818894;padding:30px 20px}.float{position:fixed;right:18px;bottom:20px;z-index:30;background:#25d366;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:900;box-shadow:0 8px 30px #0008}
+@media(max-width:750px){nav{display:none}.grid,.gallery,.contactgrid{grid-template-columns:1fr}.hero{min-height:76vh;padding:55px 18px}section{padding:55px 18px}.photo{height:190px}}
 </style>
 </head>
 <body>
-<header>
-  <div class="nav">
-    <div class="logo">MUSKAR <span>OTOMOTİV</span></div>
-    <nav>
-      <a href="#hizmetler">Hizmetler</a>
-      <a href="#hakkimizda">Hakkımızda</a>
-      <a href="#iletisim">İletişim</a>
-    </nav>
-  </div>
-</header>
+<header><div class="nav"><div class="logo">MUSKAR <b>OTOMOTİV</b></div><nav><a href="#hizmetler">Hizmetler</a><a href="#galeri">Galeri</a><a href="#iletisim">İletişim</a></nav></div></header>
 
-<main>
-<section class="hero">
-  <div class="hero-inner">
-    <div class="badge">42 • KONYA</div>
-    <h1>Aracınız için<br><span>güvenilir</span> servis.</h1>
-    <p>Kaporta, boya, hasarlı araç onarımı ve otomotiv çözümlerinde kaliteli işçilik ve güvenilir hizmet.</p>
-    <div class="buttons">
-      <a class="btn primary" href="tel:+905511500428">Hemen Ara</a>
-      <a class="btn secondary" href="#iletisim">İletişime Geç</a>
-    </div>
-  </div>
-</section>
+<section class="hero"><div class="wrap">
+<span class="tag">42 • KONYA</span>
+<h1>Aracınız için<br><span class="red">güvenilir</span> servis.</h1>
+<p>Kaporta, boya ve hasarlı araç onarımında kaliteli işçilik, hızlı iletişim ve güvenilir hizmet.</p>
+<div class="btns"><a class="btn primary" href="tel:+905511500428">📞 Hemen Ara</a><a class="btn dark" href="https://wa.me/905511500428?text=Merhaba%20MUSKAR%20OTOMOT%C4%B0V%2C%20arac%C4%B1m%20i%C3%A7in%20bilgi%20almak%20istiyorum.">💬 WhatsApp</a></div>
+</div></section>
 
-<section id="hizmetler">
-  <h2 class="section-title">Hizmetlerimiz</h2>
-  <p class="section-text">Aracınızın görünümü ve güvenliği için profesyonel çözümler.</p>
-  <div class="cards">
-    <div class="card"><h3>Kaporta</h3><p>Hasarlı parçaların onarımı, düzeltme ve kaporta işlemleri.</p></div>
-    <div class="card"><h3>Boya</h3><p>Renk uyumuna dikkat edilerek profesyonel boya uygulamaları.</p></div>
-    <div class="card"><h3>Hasarlı Araç</h3><p>Kaza sonrası araçların onarım ve yenileme süreçleri.</p></div>
-  </div>
-</section>
+<section id="hizmetler"><div class="wrap">
+<h2 class="title">Hizmetlerimiz</h2><p class="sub">Aracınız için ihtiyaç duyduğunuz otomotiv çözümleri.</p>
+<div class="grid">
+<div class="card"><div class="icon">🔧</div><h3>Kaporta</h3><p>Hasarlı parçaların onarımı, düzeltme ve kaporta işlemleri.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Boya</h3><p>Renk uyumu ve temiz işçilik odaklı boya uygulamaları.</p></div>
+<div class="card"><div class="icon">🚗</div><h3>Hasarlı Araç</h3><p>Kaza sonrası araçların onarım ve yenileme süreçleri.</p></div>
+</div></div></section>
 
-<section id="hakkimizda">
-  <h2 class="section-title">MUSKAR OTOMOTİV</h2>
-  <p class="section-text">Müşteri memnuniyetini, şeffaf iletişimi ve kaliteli işçiliği ön planda tutuyoruz. Aracınızı teslim aldığımız andan teslim ettiğimiz ana kadar süreci titizlikle takip ediyoruz.</p>
-</section>
+<section id="galeri"><div class="wrap">
+<h2 class="title">MUSKAR OTOMOTİV</h2><p class="sub">İşlerimizden örnekler için galeri.</p>
+<div class="gallery"><div class="photo">Kaporta Onarım</div><div class="photo">Boya İşlemleri</div><div class="photo">Hasarlı Araç</div></div>
+</div></section>
 
-<section id="iletisim" class="contact">
-  <h2 class="section-title">İletişim</h2>
-  <div class="contact-box">
-    <div class="info"><strong>Telefon</strong><span>0551 150 04 28</span></div>
-    <div class="info"><strong>E-posta</strong><span>karabacakmustafa1@gmail.com</span></div>
-    <div class="info"><strong>Hizmet</strong><span>Kaporta • Boya • Hasarlı Araç</span></div>
-    <div class="info"><strong>Bölge</strong><span>Konya • 42</span></div>
-  </div>
-</section>
-</main>
+<section><div class="wrap"><h2 class="title">Neden MUSKAR?</h2><div class="grid">
+<div class="card"><h3>✓ Güvenilir Hizmet</h3><p>Aracınızı teslim aldığımız andan teslim ettiğimiz ana kadar süreci önemseriz.</p></div>
+<div class="card"><h3>✓ Kaliteli İşçilik</h3><p>İşin düzgün ve temiz yapılmasına odaklanıyoruz.</p></div>
+<div class="card"><h3>✓ Hızlı İletişim</h3><p>Telefon ve WhatsApp üzerinden kolayca bize ulaşabilirsiniz.</p></div>
+</div></div></section>
 
-<footer>© 2026 MUSKAR OTOMOTİV — Tüm hakları saklıdır.</footer>
+<section id="iletisim" class="contact"><div class="wrap">
+<h2 class="title">İletişim</h2><p class="sub">Aracınız için bilgi ve teklif almak için bize ulaşın.</p>
+<div class="contactgrid">
+<div class="info"><strong>📞 Telefon</strong><span>0551 150 04 28</span></div>
+<div class="info"><strong>💬 WhatsApp</strong><span>0551 150 04 28</span></div>
+<div class="info"><strong>✉️ E-posta</strong><span>karabacakmustafa1@gmail.com</span></div>
+<div class="info"><strong>📍 Bölge</strong><span>Konya • 42</span></div>
+</div>
+<div class="btns"><a class="btn primary" href="tel:+905511500428">Hemen Ara</a><a class="btn dark" href="https://wa.me/905511500428">WhatsApp'tan Yaz</a></div>
+</div></section>
+
+<footer>© 2026 MUSKAR OTOMOTİV • Konya</footer>
+<a class="float" href="https://wa.me/905511500428?text=Merhaba%20MUSKAR%20OTOMOT%C4%B0V">💬 WhatsApp</a>
 </body>
 </html>
