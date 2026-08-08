@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUSKAR OTOMOTİV | Kaporta & Boya</title>
+<meta name="description" content="MUSKAR OTOMOTİV - Kaporta, boya, hasarlı araç onarımı ve otomotiv hizmetleri.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b0d10;color:#fff;line-height:1.5}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:rgba(11,13,16,.95);border-bottom:1px solid #292d33}
+.nav{max-width:1100px;margin:auto;padding:18px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;letter-spacing:1px}.logo span{color:#e31b23}
+nav a{margin-left:20px;color:#ddd;font-weight:700}
+.hero{min-height:78vh;display:flex;align-items:center;background:linear-gradient(120deg,#08090b 25%,#171a1f 70%,#2a0b0d);padding:60px 22px}
+.hero-inner{max-width:1100px;margin:auto;width:100%}
+.badge{display:inline-block;border:1px solid #e31b23;color:#ff5960;border-radius:30px;padding:8px 15px;font-weight:700;margin-bottom:20px}
+h1{font-size:clamp(42px,8vw,82px);line-height:.95;margin-bottom:22px}
+h1 span{color:#e31b23}
+.hero p{max-width:650px;color:#c9cbd0;font-size:19px;margin-bottom:30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:14px 22px;border-radius:10px;font-weight:800;display:inline-block}
+.primary{background:#e31b23}.secondary{border:1px solid #555;background:#171a1f}
+section{max-width:1100px;margin:auto;padding:70px 22px}
+.section-title{font-size:34px;margin-bottom:12px}.section-text{color:#aeb3bb;margin-bottom:28px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#15181d;border:1px solid #292d33;border-radius:16px;padding:25px}
+.card h3{font-size:21px;margin-bottom:9px}.card p{color:#aeb3bb}
+.contact{background:#12151a;border-top:1px solid #292d33;border-bottom:1px solid #292d33}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.info{background:#1a1e24;border-radius:16px;padding:25px}.info strong{display:block;font-size:18px;margin-bottom:5px}.info span{color:#c4c8ce}
+footer{text-align:center;padding:30px 20px;color:#858b94}
+@media(max-width:700px){nav{display:none}.cards,.contact-box{grid-template-columns:1fr}section{padding:50px 18px}.hero{min-height:72vh;padding:45px 18px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">MUSKAR <span>OTOMOTİV</span></div>
+    <nav>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </div>
+</header>
 
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="badge">42 • KONYA</div>
+    <h1>Aracınız için<br><span>güvenilir</span> servis.</h1>
+    <p>Kaporta, boya, hasarlı araç onarımı ve otomotiv çözümlerinde kaliteli işçilik ve güvenilir hizmet.</p>
+    <div class="buttons">
+      <a class="btn primary" href="tel:+905511500428">Hemen Ara</a>
+      <a class="btn secondary" href="#iletisim">İletişime Geç</a>
+    </div>
+  </div>
+</section>
+
+<section id="hizmetler">
+  <h2 class="section-title">Hizmetlerimiz</h2>
+  <p class="section-text">Aracınızın görünümü ve güvenliği için profesyonel çözümler.</p>
+  <div class="cards">
+    <div class="card"><h3>Kaporta</h3><p>Hasarlı parçaların onarımı, düzeltme ve kaporta işlemleri.</p></div>
+    <div class="card"><h3>Boya</h3><p>Renk uyumuna dikkat edilerek profesyonel boya uygulamaları.</p></div>
+    <div class="card"><h3>Hasarlı Araç</h3><p>Kaza sonrası araçların onarım ve yenileme süreçleri.</p></div>
+  </div>
+</section>
+
+<section id="hakkimizda">
+  <h2 class="section-title">MUSKAR OTOMOTİV</h2>
+  <p class="section-text">Müşteri memnuniyetini, şeffaf iletişimi ve kaliteli işçiliği ön planda tutuyoruz. Aracınızı teslim aldığımız andan teslim ettiğimiz ana kadar süreci titizlikle takip ediyoruz.</p>
+</section>
+
+<section id="iletisim" class="contact">
+  <h2 class="section-title">İletişim</h2>
+  <div class="contact-box">
+    <div class="info"><strong>Telefon</strong><span>0551 150 04 28</span></div>
+    <div class="info"><strong>E-posta</strong><span>karabacakmustafa1@gmail.com</span></div>
+    <div class="info"><strong>Hizmet</strong><span>Kaporta • Boya • Hasarlı Araç</span></div>
+    <div class="info"><strong>Bölge</strong><span>Konya • 42</span></div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 MUSKAR OTOMOTİV — Tüm hakları saklıdır.</footer>
+</body>
+</html>
