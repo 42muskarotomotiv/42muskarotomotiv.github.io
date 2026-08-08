@@ -39,6 +39,24 @@ footer{padding:30px 0;text-align:center;color:#777f8a;font-size:14px}
 .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 40%,rgba(237,27,47,.16),transparent 42%);pointer-events:none}
 .address-pill{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:10px 14px;border:1px solid #ffffff2a;border-radius:12px;background:#090b0fc7;color:#dfe3e8;font-weight:750}
 @media(max-width:760px){.logo-text{font-size:20px}.hero{background-position:center center;padding:50px 0}}
+
+.services-visual{padding:82px 0;background:#0b0d12}
+.services-visual .section-head{margin-bottom:30px}
+.services-visual h2{font-size:clamp(34px,5vw,56px);margin:6px 0 10px}
+.services-visual .section-head p{color:#aeb4bf;font-size:18px}
+.eyebrow{color:#ed1b2f;font-weight:900;letter-spacing:2px;font-size:13px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card{position:relative;min-height:330px;border-radius:22px;overflow:hidden;border:1px solid #ffffff18;background:#151821;box-shadow:0 18px 45px #0008}
+.service-card img{width:100%;height:100%;min-height:330px;object-fit:cover;display:block;transition:transform .5s ease}
+.service-card:hover img{transform:scale(1.05)}
+.service-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 25%,rgba(0,0,0,.92) 100%)}
+.service-overlay{position:absolute;z-index:2;left:22px;right:22px;bottom:20px}
+.service-icon{font-size:28px;display:block;margin-bottom:5px}
+.service-overlay h3{font-size:26px;margin:0 0 7px;color:#fff}
+.service-overlay p{margin:0;color:#d8dbe1;line-height:1.45}
+.image-credit{margin-top:18px;color:#737b87;font-size:12px}
+@media(max-width:900px){.service-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.service-grid{grid-template-columns:1fr}.service-card,.service-card img{min-height:270px}}
 </style>
 </head>
 <body>
@@ -98,7 +116,76 @@ footer{padding:30px 0;text-align:center;color:#777f8a;font-size:14px}
 </div></section>
 </main>
 
-<footer>© 2026 MUSKAR OTOMOTİV • Konya<br>Kaporta • Boya • Hasarlı Araç Onarımı</footer>
+<footer>© 20
+<section id="hizmetler" class="services-visual">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">MUSKAR OTOMOTİV</div>
+        <h2>Hizmetlerimiz</h2>
+        <p>Aracınız için profesyonel servis ve onarım çözümleri.</p>
+      </div>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tow_Truck.jpg"
+             alt="Oto kurtarıcı ve çekici" loading="lazy">
+        <div class="service-overlay">
+          <span class="service-icon">🚛</span>
+          <h3>Kurtarıcı</h3>
+          <p>Aracınız için güvenli çekici ve kurtarma desteği.</p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Panel_beater_mending_a_vehicle.jpg"
+             alt="Oto kaporta onarımı" loading="lazy">
+        <div class="service-overlay">
+          <span class="service-icon">🔧</span>
+          <h3>Kaporta</h3>
+          <p>Hasarlı parçaların profesyonel kaporta onarımı.</p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_man_is_painting_a_car.jpg"
+             alt="Oto boya işlemi" loading="lazy">
+        <div class="service-overlay">
+          <span class="service-icon">🎨</span>
+          <h3>Boya</h3>
+          <p>Aracınıza uygun renk ve kaliteli boya uygulaması.</p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Car_repair_01.jpg"
+             alt="Otomobil tamir ve bakım" loading="lazy">
+        <div class="service-overlay">
+          <span class="service-icon">🛠️</span>
+          <h3>Tamir & Bakım</h3>
+          <p>Arıza tespiti, bakım ve mekanik onarım hizmetleri.</p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Car_Electrician.jpg"
+             alt="Oto elektrik servisi" loading="lazy">
+        <div class="service-overlay">
+          <span class="service-icon">⚡</span>
+          <h3>Oto Elektrik</h3>
+          <p>Elektrik, akü, kablo ve elektronik arıza çözümleri.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="image-credit">
+      Görseller: Wikimedia Commons. Lisans bilgileri görsel kaynaklarında belirtilmiştir.
+    </div>
+  </div>
+</section>
+
+26 MUSKAR OTOMOTİV • Konya<br>Kaporta • Boya • Hasarlı Araç Onarımı</footer>
 <a class="float" href="https://wa.me/905511500428?text=Merhaba%20MUSKAR%20OTOMOT%C4%B0V">💬 WhatsApp</a>
 </body>
 </html>
